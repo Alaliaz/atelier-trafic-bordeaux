@@ -1,0 +1,8 @@
+trafic_bordeaux:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "C:/Users/HP-X360-1030-G3/PycharmProjects/notebooks/exercice3/data/warehouse.duckdb"
+      schema: main
+      threads: 4

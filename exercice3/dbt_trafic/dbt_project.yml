@@ -1,0 +1,16 @@
+name: "trafic_bordeaux"
+version: "1.0.0"
+config-version: 2
+
+profile: "trafic_bordeaux"
+
+model-paths: ["models"]
+
+models:
+  trafic_bordeaux:
+    bronze:
+      +materialized: view
+    silver:
+      +materialized: table
+    gold:
+      +materialized: table
